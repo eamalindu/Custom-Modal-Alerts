@@ -1,4 +1,4 @@
-function showModal(msg,type) {
+function showCustomModal(msg,variant) {
 
     // Create the modal element.
     const modal = document.createElement('div');
@@ -54,14 +54,14 @@ function showModal(msg,type) {
     modalBodyGif.classList.add('d-flex','mx-auto');
 
     //adding different gifs accordingly
-    if(type ==="warning"){
+    if(variant ==="warning"){
         modalBodyGif.src='resources/images/warning.gif';
     }
-    else if (type==="error"){
+    else if (variant==="error"){
         modalBodyGif.src='resources/images/error.gif';
         modalBodyGif.classList.add('ps-2');
     }
-    else if(type ==="success"){
+    else if(variant ==="success"){
         modalBodyGif.src='resources/images/success.gif';
 
     }
@@ -75,7 +75,7 @@ function showModal(msg,type) {
     //add primary text value (msg) to modalBody
     const modalBodyPrimaryText = document.createElement('h5');
     modalBodyPrimaryText.classList.add('text-center','fs-3','text-capitalize','fw-bold');
-    modalBodyPrimaryText.innerText = type+' !';
+    modalBodyPrimaryText.innerText = variant+' !';
     modalBody.appendChild(modalBodyPrimaryText);
 
     //add secondary text to modalBody

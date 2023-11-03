@@ -91,7 +91,7 @@
         </div>
         <div class="col-12 mt-3">
             <h5 class="fw-bold text-uppercase">Documentation</h5>
-            <div class="card card-body">
+            <div class="card card-body table-responsive">
                 <table class="table table-striped table-bordered">
                     <thead>
                     <tr>
@@ -110,8 +110,20 @@
                     </tr>
                     <tr>
                         <td><code>showCustomModal("Hello","info")</code></td>
-                        <td>This will display <b>info</b> variant of the modal with the text with <code>Hello</code>
+                        <td>This will display <b>info</b> variant of the modal with the text with <kbd>Hello</kbd>
                             <button class="btn btn-primary btn-sm float-end" onclick="showCustomModal('Hello!','info')" type="submit">Try It</button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><code>showCustomModal("This is an Error!","error")</code></td>
+                        <td>This will display <b>error</b> variant of the modal with the text with <kbd>This is an Error</kbd>
+                            <button class="btn btn-danger btn-sm float-end" onclick="showCustomModal('This is an Error!','error')" type="submit">Try It</button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><code>showCustomModal("This is a Warning!","warning")</code></td>
+                        <td>This will display <b>warning</b> variant of the modal with the text with <kbd>This is a Warning</kbd>
+                            <button class="btn btn-warning btn-sm float-end text-white" onclick="showCustomModal('This is a Warning!','warning')" type="submit">Try It</button>
                         </td>
                     </tr>
                     </tbody>

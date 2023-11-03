@@ -121,11 +121,11 @@
         </div>
         <div class="col-12 mt-3">
             <h5 class="fw-bold text-uppercase">Documentation</h5>
-            <div class="card card-body table-responsive">
+            <div class="card card-body overflow-auto">
                 <table class="table table-striped table-bordered w-100">
                     <thead>
                     <tr>
-                        <th class="w-25">Example</th>
+                        <th>Example</th>
                         <th>Explanation</th>
                     </tr>
                     </thead>
@@ -139,31 +139,31 @@
                         <td>Either can be <b>success</b>, <b>error</b>, <b>warning</b> or <b>info</b></td>
                     </tr>
                     <tr>
-                        <td><code>showCustomModal("Hello","info")</code></td>
-                        <td>This will display <b>info</b> variant of the modal with the text with <kbd>Hello</kbd>
+                        <td class="text-nowrap"><code>showCustomModal("Hello","info")</code></td>
+                        <td class="text-nowrap">This will display <b>info</b> variant of the modal with the text with <kbd>Hello</kbd>
                             <button class="btn btn-primary btn-sm float-end" onclick="showCustomModal('Hello!','info')" type="submit">Try It</button>
                         </td>
                     </tr>
                     <tr>
-                        <td><code>showCustomModal("This is an Error!","error")</code></td>
-                        <td>This will display <b>error</b> variant of the modal with the text with <kbd>This is an Error</kbd>
+                        <td class="text-nowrap"><code>showCustomModal("This is an Error!","error")</code></td>
+                        <td class="text-nowrap">This will display <b>error</b> variant of the modal with the text with <kbd>This is an Error</kbd>
                             <button class="btn btn-danger btn-sm float-end" onclick="showCustomModal('This is an Error!','error')" type="submit">Try It</button>
                         </td>
                     </tr>
                     <tr>
-                        <td><code>showCustomModal("This is a Warning!","warning")</code></td>
-                        <td>This will display <b>warning</b> variant of the modal with the text with <kbd>This is a Warning</kbd>
+                        <td class="text-nowrap"><code>showCustomModal("This is a Warning!","warning")</code></td>
+                        <td class="text-nowrap">This will display <b>warning</b> variant of the modal with the text with <kbd>This is a Warning</kbd>
                             <button class="btn btn-warning btn-sm float-end text-white" onclick="showCustomModal('This is a Warning!','warning')" type="submit">Try It</button>
                         </td>
                     </tr>
                     <tr>
-                        <td><code>showCustomModal("This is a Success!","success")</code></td>
-                        <td>This will display <b>success</b> variant of the modal with the text with <kbd>This is a Success</kbd>
+                        <td class="text-nowrap"><code>showCustomModal("This is a Success!","success")</code></td>
+                        <td class="text-nowrap">This will display <b>success</b> variant of the modal with the text with <kbd>This is a Success</kbd>
                             <button class="btn btn-success btn-sm float-end text-white" onclick="showCustomModal('This is a Success!','success')" type="submit">Try It</button>
                         </td>
                     </tr>
                     <tr>
-                        <td colspan="2" class="text-center">
+                        <td  colspan="2" class="text-center text-nowrap">
                             <b class="text-success">Success</b> and <b class="text-info">info</b> variant will be automatically closed after 5 seconds
                         </td>
                     </tr>

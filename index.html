@@ -19,6 +19,8 @@
     <link href="css/style.css" rel="stylesheet">
     <!-- jquery CDN-->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+
+    <script src="customModal/resources/js/customModal.js"></script>
 </head>
 
 <body>
@@ -28,34 +30,45 @@
 <div class="row m-0 mt-3">
     <div class="col-6 col-lg-3">
         <div class="card border-success bg-success">
-            <div class="card-body">
+            <div class="card-body text-center">
                 <img class="card-img-top border" src="images/success.png">
                 <h5 class="card-title text-white mt-4 text-center fw-bold">Success Modal</h5>
-
+            </div>
+            <div class="card-footer bg-white text-center">
+                <button class="btn btn-success" onclick="showCustomModal('Payment Completed!','success')" type="submit">Success</button>
             </div>
         </div>
     </div>
     <div class="col-6 col-lg-3">
         <div class="card border-danger bg-danger h-100">
-            <div class="card-body ">
+            <div class="card-body text-center">
                 <img class="card-img-top border" src="images/error.png">
                 <h5 class="card-title text-white mt-4 text-center fw-bold">Error Modal</h5>
+            </div>
+            <div class="card-footer bg-white text-center">
+                <button class="btn btn-danger" onclick="showCustomModal('Payment Completed!','error')" type="submit">Error</button>
             </div>
         </div>
     </div>
     <div class="col-6 col-lg-3 mt-2 mt-lg-0">
         <div class="card border-warning bg-warning">
-            <div class="card-body">
+            <div class="card-body text-center">
                 <img class="card-img-top border" src="images/warning.png">
                 <h5 class="card-title text-white mt-4 text-center fw-bold">Warning Modal</h5>
+            </div>
+            <div class="card-footer bg-white text-center">
+                <button class="btn btn-warning text-white" onclick="showCustomModal('Payment Completed!','warning')" type="submit">Warning</button>
             </div>
         </div>
     </div>
     <div class="col-6 col-lg-3 mt-2 mt-lg-0">
         <div class="card border-info bg-primary">
-            <div class="card-body">
+            <div class="card-body text-center">
                 <img class="card-img-top border" src="images/info.png">
                 <h5 class="card-title text-white mt-4 text-center fw-bold">Info Modal</h5>
+            </div>
+            <div class="card-footer bg-white text-center">
+                <button class="btn btn-primary" onclick="showCustomModal('Hello!','info')" type="submit">Info</button>
             </div>
         </div>
     </div>
@@ -72,7 +85,7 @@
         <div class="col-12 col-lg-6 mt-2 mt-lg-0">
             <div class="card card-body h-100">
                 <h5 class="fw-bold text-uppercase">Usage</h5>
-                <code>showCustomModal(msg,variant);</code>
+                <code class="mt-2">showCustomModal(msg,variant);</code>
 
             </div>
         </div>
@@ -93,11 +106,13 @@
                     </tr>
                     <tr>
                         <td><code>type</code></td>
-                        <td>Either can be <b>success</b>, <b>error</b>, <b>warning</b> or leave it empty for <b>info</b> variant</td>
+                        <td>Either can be <b>success</b>, <b>error</b>, <b>warning</b> or <b>info</b></td>
                     </tr>
                     <tr>
-                        <td><code>showCustomModal("Hello")</code></td>
-                        <td>This will display <b>info</b> variant of the modal with the text with <code>Hello</code></td>
+                        <td><code>showCustomModal("Hello","info")</code></td>
+                        <td>This will display <b>info</b> variant of the modal with the text with <code>Hello</code>
+                            <button class="btn btn-primary btn-sm float-end" onclick="showCustomModal('Hello!','info')" type="submit">Try It</button>
+                        </td>
                     </tr>
                     </tbody>
                 </table>

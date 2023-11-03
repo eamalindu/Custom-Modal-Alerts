@@ -55,18 +55,18 @@ function showCustomModal(msg,variant) {
 
     //adding different gifs accordingly
     if(variant ==="warning"){
-        modalBodyGif.src='resources/images/warning.gif';
+        modalBodyGif.src='customModal/resources/images/warning.gif';
     }
     else if (variant==="error"){
-        modalBodyGif.src='resources/images/error.gif';
+        modalBodyGif.src='customModal/resources/images/error.gif';
         modalBodyGif.classList.add('ps-2');
     }
     else if(variant ==="success"){
-        modalBodyGif.src='resources/images/success.gif';
+        modalBodyGif.src='customModal/resources/images/success.gif';
 
     }
     else{
-        modalBodyGif.src='resources/images/info.gif';
+        modalBodyGif.src='customModal/resources/images/info.gif';
     }
 
     modalBodyGif.style.width = '150px';
@@ -110,7 +110,7 @@ function showCustomModal(msg,variant) {
     new bootstrap.Modal(modal).show();
 
     //Hide the modal if the type is success or info
-    if(type==="success"||type==="info") {
+    if(variant==="success"||variant==="info") {
         setTimeout(function () {
             modalCloseButton.click();
         }, 4900);

@@ -27,6 +27,9 @@
 <div class="container-fluid p-3 bg-info">
     <h1 class="text-center text-white text-uppercase fw-bold">Custom Modal Alerts for Bootstrap 5</h1>
 </div>
+<div class="container-fluid">
+    <p class="p-3 text-center">Originally created as a <span class="fw-bold">side project for BIT Final Project</span>. The Custom Modal Alert can be attached to any webpage element to show modern model with beautiful animated GIFs</p>
+</div>
 <div class="row m-0 mt-3">
     <div class="col-6 col-lg-3">
         <div class="card border-success bg-success">
@@ -90,9 +93,36 @@
             </div>
         </div>
         <div class="col-12 mt-3">
+            <h5 class="fw-bold text-uppercase">Getting Started</h5>
+            <div class="card card-body">
+                <p>To get started, include jQuery, bootstrap css, bootstrap js and custom Modal files in your webpage</p>
+                <div>
+                    <code>
+                        &lt;link crossorigin="anonymous" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet">
+                        <br/>
+                        &lt;script src="https://cdn.jsdelivr.net/jquery/latest/jquery.min.js" type="text/javascript">&lt;/script>
+                        <br/>
+                        &lt;script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" type="text/javascript">&lt;/script>
+                        <br/>
+                        &lt;script src="customModal/resources/js/customModal.js" type="text/javascript">&lt;/script>
+                        <br/>
+                    </code>
+                </div>
+                <br/>
+                <p>Then call <code>showCustomModal()</code> to whatever you want to trigger it</p>
+                <div>
+                    <code>
+                        &lt;script>
+                        showCustomModal("Hello","info");
+                        &lt;/script>
+                    </code>
+                </div>
+            </div>
+        </div>
+        <div class="col-12 mt-3">
             <h5 class="fw-bold text-uppercase">Documentation</h5>
             <div class="card card-body table-responsive">
-                <table class="table table-striped table-bordered">
+                <table class="table table-striped table-bordered w-100">
                     <thead>
                     <tr>
                         <th>Example</th>

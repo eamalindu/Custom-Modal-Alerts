@@ -4,8 +4,7 @@ Originally created as a side project for BIT Final Project. The Custom Modal Ale
 
 DEPENDENCIES
 --
-Bootstrap 5.0+\
-Jquery 3.7+
+Bootstrap 5.0+
 
 USAGE
 --

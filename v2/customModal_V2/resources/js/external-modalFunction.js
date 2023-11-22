@@ -54,15 +54,15 @@ function showCustomModal(msg, type) {
 
     //adding different gifs accordingly
     if (type === "warning") {
-        modalBodyGif.src = 'v2/customModal_v2/resources/images/warning.gif';
+        modalBodyGif.src = 'customModal_v2/resources/images/warning.gif';
     } else if (type === "error") {
-        modalBodyGif.src = 'v2/customModal_v2/resources/images/error.gif';
+        modalBodyGif.src = 'customModal_v2/resources/images/error.gif';
         modalBodyGif.classList.add('ps-2');
     } else if (type === "success") {
-        modalBodyGif.src = 'v2/customModal_v2/resources/images/success.gif';
+        modalBodyGif.src = 'customModal_v2/resources/images/success.gif';
 
     } else {
-        modalBodyGif.src = 'v2/customModal_v2/resources/images/info.gif';
+        modalBodyGif.src = 'customModal_v2/resources/images/info.gif';
     }
 
     modalBodyGif.style.width = '150px';
@@ -144,7 +144,7 @@ function showCustomConfirm(msg, result) {
     const modalBodyGif = document.createElement('img');
     modalBodyGif.classList.add('d-flex', 'mx-auto');
 
-    modalBodyGif.src = 'v2/customModal_v2/resources/images/alert.gif';
+    modalBodyGif.src = 'customModal_v2/resources/images/alert.gif';
     modalBodyGif.style.width = '100px';
     modalBody.appendChild(modalBodyGif);
 

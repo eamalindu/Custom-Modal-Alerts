@@ -1,3 +1,30 @@
+# **Version 2.0 (Latest)**
+
+The Custom Modal Now Support Custom Alerts.
+Instead of using native confirm alerts from JS now you can use beautifully animated custom confirm alerts
+
+DEPENDENCIES
+--
+Bootstrap 5.0+
+
+USAGE
+--
+
+```
+showCustomConfirm(msg,result);
+```
+
+DOCUMENTATION
+--
+
+| Example                                               | Explanation                                                                             |
+|-------------------------------------------------------|-----------------------------------------------------------------------------------------|
+| ```msg```                                             | Insert your message here                                                                |
+| ```result```                                          | catch the result of the user confirmation (callback function)                           |
+
+
+# **Version 1.0**
+
 CUSTOM MODAL ALERTS FOR BOOTSTRAP 5
 --
 Originally created as a side project for BIT Final Project. The Custom Modal Alert can be attached to any webpage element to show modern model with beautiful animated GIFs

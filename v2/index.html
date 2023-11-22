@@ -36,7 +36,8 @@
                 <h5 class="card-title text-white mt-4 text-center fw-bold">Confirm Modal Alert</h5>
             </div>
             <div class="card-footer bg-white text-center">
-                <button class="btn btn-secondary" onclick="showCustomConfirm('Are You sure?',function (result){if(result){showCustomModal('You clicked Yes','info')}else{showCustomModal('You clicked No','info')}})"
+                <button class="btn btn-secondary"
+                        onclick="showCustomConfirm('Are You sure?',function (result){if(result){showCustomModal('You clicked Yes','info')}else{showCustomModal('You clicked No','info')}})"
                         type="submit">Confirm
                 </button>
             </div>
@@ -125,20 +126,17 @@
                                         <li>If <code>result</code> is <code>false</code>, it means the user clicked "No" or closed the modal without clicking "Yes", and an alert is shown with the
                                             message "User clicked No or closed the modal".
                                         </li>
+                                        <li><strong class="text-danger">In this example, it displays an alert message, but you can replace it with your desired logic.</strong></li>
                                     </ul>
                                     <br/>
                                 </li>
-                                <li><p><strong>Explanation of Modal Behavior:</strong></p>
-                                    <ul>
-                                        <li>The <code>customConfirm</code> function you've created displays a modal with a message and two buttons ("Yes" and "No").</li>
-                                        <li>When the user clicks "Yes," the callback function is invoked with <code>result</code> set to <code>true</code>.</li>
-                                        <li>When the user clicks "No" or closes the modal without clicking "Yes," the callback function is invoked with <code>result</code> set to <code>false</code>.
-                                        </li>
-                                    </ul>
-                                </li>
                             </ol>
 
-                            <button class="btn btn-primary btn-sm float-end" onclick="showCustomModal('Hello!','info')" type="submit">Try It</button>
+                            <button class="btn btn-primary btn-sm float-end" onclick="showCustomConfirm('Are you sure you want to proceed?', function (result) {if (result) { alert('User clicked Yes');   } else {
+                            alert('User clicked No or closed the modal');
+                            }
+                            });" type="submit">Try It
+                            </button>
                         </td>
                     </tr>
                     </tbody>

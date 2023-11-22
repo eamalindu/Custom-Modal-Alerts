@@ -113,7 +113,7 @@ function showCustomModal(msg, type) {
     }
 }
 
-function customConfirm(msg, result) {
+function showCustomConfirm(msg, result) {
     // Create the modal element.
     const modal = document.createElement('div');
     modal.classList.add('modal', 'fade');

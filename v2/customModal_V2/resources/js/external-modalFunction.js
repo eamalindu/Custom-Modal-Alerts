@@ -1,4 +1,4 @@
-function showModal(msg, type) {
+function showCustomModal(msg, type) {
     // Create the modal element.
     const modal = document.createElement('div');
     modal.classList.add('modal', 'fade');

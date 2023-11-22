@@ -144,7 +144,7 @@ function showCustomConfirm(msg, result) {
     const modalBodyGif = document.createElement('img');
     modalBodyGif.classList.add('d-flex', 'mx-auto');
 
-    modalBodyGif.src = 'resources/images/alert.gif';
+    modalBodyGif.src = 'https://github.com/eamalindu/eamalindu.github.io/blob/852c448075c70276573c8d355998cd4025fc44de/v2/customModal_V2/resources/images/alert.gif';
     modalBodyGif.style.width = '100px';
     modalBody.appendChild(modalBodyGif);
 

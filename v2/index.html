@@ -36,7 +36,7 @@
                 <h5 class="card-title text-white mt-4 text-center fw-bold">Confirm Modal Alert</h5>
             </div>
             <div class="card-footer bg-white text-center">
-                <button class="btn btn-secondary" type="submit" onclick="customConfirm('Are You sure?',function (result){})">Confirm</button>
+                <button class="btn btn-secondary" type="submit" onclick="customConfirm('Are You sure?',function (result){if(result){showCustomModal('You clicked Yes','info')}})">Confirm</button>
             </div>
         </div>
     </div>
